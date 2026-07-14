@@ -50,6 +50,7 @@ section p {
 }
 
 section img {
+
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -156,4 +157,27 @@ footer p {
 
 #contact p {
     font-size: 18px;
+}
+
+section, .hero, .project {
+    animation: fadeIn 1.2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.project {
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
 }
